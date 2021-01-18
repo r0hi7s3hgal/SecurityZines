@@ -17,5 +17,5 @@ jobs:
           script: |
             echo 'Startung the deployment'
             cd www/securityzines.com/
-            git pull origin master 
+            git pull origin main
             echo 'Deployment successful to digital ocean' 
