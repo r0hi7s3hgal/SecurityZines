@@ -1,20 +1,62 @@
 /* unvisited link */
 a:link {
-    color: rgb(0, 140, 255);
-  }
-  
-  /* visited link */
-  a:visited {
-    color: white;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: rgb(47, 158, 248);
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  } 
-  
+  color: rgb(0, 140, 255);
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(47, 158, 248);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+/* CSS for image over the other image */
+.parent {
+position: relative;
+top: 0;
+left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+  width: auto;
+}
+
+.image2 {
+  position: absolute;
+  top: -25px;
+  left: -10px;
+}
+
+.image3 {
+  position: absolute;
+  top: -40px;
+  right: -15px;
+  width: 75px;
+}
+
+/* CSS for image on mouse over zoom */
+
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
