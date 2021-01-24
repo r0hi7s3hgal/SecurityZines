@@ -125,3 +125,8 @@ Twitter color : #60a6db
       font-size: 8px;
   }
 }
+
+
+.timeline .stream { height: 100px !important;}
+ol.h-feed {height:340px !important;}
+
