@@ -1,21 +1,18 @@
 /* unvisited link */
 a:link {
-  color: rgb(0, 140, 255);
-}
-
-/* visited link */
-a:visited {
-  color: white;
+  color: rgb(112, 183, 241);
 }
 
 /* mouse over link */
-a:hover {
+a:hover img{
+  transition: transform .5s, filter 1.5s ease-in-out;
   color: rgb(47, 158, 248);
+  transform: scale(1.5);
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: rgb(247, 247, 247);
 } 
 
 /* CSS for image over the other image */
@@ -33,22 +30,23 @@ left: 0;
   width: auto;
 }
 
-.image2 {
+coming-soon {
   position: absolute;
   top: -25px;
-  left: -10px;
+  left: -5px;
+  width: 70px;
+  content: url("/images/coming-soon.png");
 }
 
-.image3 {
+new-zine {
   position: absolute;
   top: -40px;
-  right: -15px;
+  right: -10px;
   width: 75px;
+  content: url("/images/new2.png");
 }
 
 /* CSS for image on mouse over zoom */
-
-
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform .5s, filter 1.5s ease-in-out;
@@ -59,4 +57,71 @@ left: 0;
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
   transform: scale(1.1);
+}
+
+
+.blackDiv {
+  background-color: #333333;
+}
+/*
+Twitter color : #60a6db
+*/
+
+.underline-on-hover a {
+  color: #ffd730;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+  transition: all ease-in-out 1s;
+}
+.underline-on-hover a:hover {
+  color: #ffd730;
+  border-color: #ffd730;
+  transform: all ease-in-out 0.5s;
+} 
+
+.underline-on-hover-twitter-link a {
+  color: #60a6db;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+  transition: all ease-in-out 1s;
+}
+.underline-on-hover-twitter-link a:hover {
+  color: #60a6db;
+  border-color:#60a6db;
+  transform: all ease-in-out 0.5s;
+} 
+
+.twitter-color-a-tag a:link{
+  color: rgb(112, 183, 241);
+  transform: all ease-in-out 0.5s;
+}
+
+@media (min-width: 858px) {
+  html {
+      font-size: 12px;
+  }
+}
+
+@media (min-width: 780px) {
+  html {
+      font-size: 11px;
+  }
+}
+
+@media (min-width: 702px) {
+  html {
+      font-size: 10px;
+  }
+}
+
+@media (min-width: 724px) {
+  html {
+      font-size: 9px;
+  }
+}
+
+@media (max-width: 623px) {
+  html {
+      font-size: 8px;
+  }
 }
