@@ -16,6 +16,7 @@
     
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/chat-bubble.css">
+	<link rel="stylesheet" href="css/img-zoom.css">
 
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
     
@@ -243,14 +244,26 @@
 				<div class="col-md-2 col-sm-3">
 					<div class="parent">
 						<div class="img-hover-zoom">
-							<img class="image1" src="images/zines/sop.png" style="width: 90%;"/>
-						</div>
+							<!-- Image Zoom HTML -->   
+							<img id="myImg" src="images/flyers/httpstatus.png" alt="HTTP Status" width="90%">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<img class="modal-content" id="img01">
+							<div id="caption"></div>
+							</div>
+					</div>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-3">
 					<div class="parent">
 						<div class="img-hover-zoom">
-							<img class="image1" src="images/zines/sqli.png" style="width: 90%;"/>
+							    <!-- Image Zoom HTML -->   
+								<img id="myImg" src="images/flyers/jwt.png" alt="JWT" width="90%">
+								<!-- The Modal -->
+								<div id="myModal" class="modal">
+									<img class="modal-content" id="img01">
+								<div id="caption"></div>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -265,5 +278,6 @@
 	<script src="js/isotope.js"></script>
 	<script src="js/imagesloaded.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/img-zoom.js"></script>
 </body>
 </html>
