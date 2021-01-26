@@ -4,11 +4,18 @@ a:link {
 }
 
 /* mouse over link */
-a:hover img{
+a:hover {
   transition: transform .5s, filter 1.5s ease-in-out;
   color: rgb(47, 158, 248);
   transform: scale(1.5);
 }
+
+/* mouse over link img hover*/
+/* a:hover {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  color: rgb(47, 158, 248);
+  transform: scale(1.5);
+} */
 
 /* selected link */
 a:active {
