@@ -84,6 +84,7 @@ Twitter color : #60a6db
   color: #ffd730;
   border-color: #ffd730;
   transform: all ease-in-out 0.5s;
+  margin-bottom: 10%;
 } 
 
 .underline-on-hover-twitter-link a {
