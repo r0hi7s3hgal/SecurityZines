@@ -66,6 +66,17 @@ new-zine {
   transform: scale(1.1);
 }
 
+.img-hover-zoom-icon img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.img-hover-zoom-icon:hover img {
+  transform: scale(2);
+}
+
+
+
 
 .blackDiv {
   background-color: #333333;

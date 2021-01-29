@@ -136,6 +136,7 @@
 			</div>
 		</div>
 	</section>
+
     <!-- START zines -->
 	<section id="zines">
 		<div class="container">
@@ -147,7 +148,7 @@
 					<div class="col-md-2 col-sm-3">
 						<div class="parent">
 							<div class="img-hover-zoom">
-								<img class="image1" src="images/zines/xss.png" style="width: 90%;"/>
+								<img class="image1" src="images/zines/xss.png" style="width:90%;"/>
 							</div>
 							<coming-soon></coming-soon>
 						</div>
@@ -258,44 +259,101 @@
 	</section>
 
 	<section id='flyers'>
-		<div class="conainer">
+		<div class="container">
 			<h2 style="color: #333333;font-family: 'Indie Flower'; font-size: 3em;">Flyers</h2>
-			<div class="w3-container">
-			</div>
-			  
-			<div class="w3-row-padding">
-				<div class="w3-container w3-third">
-				  <img src="images/flyers/httpstatus.png" style="width:90%;cursor:pointer" 
+				<img src="images/flyers/httpstatus.png" style="width:15%;cursor:pointer" 
+				onclick="onClick(this)" class="w3-hover-opacity">
+		
+				
+				  <img src="images/flyers/jwt.png" style="width:15%;cursor:pointer" 
 				  onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
-				<div class="w3-container w3-third">
-				  <img src="images/flyers/jwt.png" style="width:90%;cursor:pointer" 
+				
+				
+					<img src="images/flyers/imlicit-code.png" style="width:15%;cursor:pointer" 
+					onclick="onClick(this)" class="w3-hover-opacity">
+				  
+				
+				  <img src="images/flyers/password-grant.png" style="width:15%;cursor:pointer" 
 				  onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
-				<div class="w3-container w3-third">
-					<img src="images/flyers/imlicit-code.png" style="width:90%;cursor:pointer" 
+				
+				
+					<img src="images/flyers/http0.9.png" style="width:15%;cursor:pointer" 
 					onclick="onClick(this)" class="w3-hover-opacity">
-				  </div>
-				<div class="w3-container w3-third">
-				  <img src="images/flyers/password-grant.png" style="width:90%;cursor:pointer" 
-				  onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
-				<div class="w3-container w3-third">
-					<img src="images/flyers/http0.9.png" style="width:90%;cursor:pointer" 
+				
+				
+					<img src="images/flyers/authcode.png" style="width:15%;cursor:pointer" 
 					onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
-				<div class="w3-container w3-third">
-					<img src="images/flyers/authcode.png" style="width:90%;cursor:pointer" 
-					onclick="onClick(this)" class="w3-hover-opacity">
-				</div>
+				
 			</div>
 			  
 			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
 				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
 				<div class="w3-modal-content w3-animate-zoom">
-				  <img id="img01" style="width:100%">
+					<center>
+				  		<img id="img01" style="width:70%">
+					</center>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section id="subscribe">
+		<div class="blackDiv flex-grow" style="margin-top: 20px;">
+			<div class="row">
+				<div class="col-md-4">
+					<!-- <div class="row">
+
+					</div>
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3" style="margin-top: 30%;">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					<div class="row"></div> -->
+				</div>
+				<div class="col-md-4" style="margin: 20px;">
+					<div class="sender-form-field" data-sender-form-id="kki827qd5763qk55t">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- <div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3" style="margin-top: 30%;">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					<div class="row"></div> -->
+				</div>
+				</div>
+			</div>
+					
 		</div>
 	</section>
 
@@ -308,5 +366,19 @@
 	<script src="js/imagesloaded.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/img-zoom.js"></script>
+	<script>
+		(function (s, e, n, d, er) {
+		  s['Sender'] = er;
+		  s[er] = s[er] || function () {
+			(s[er].q = s[er].q || []).push(arguments)
+		  }, s[er].l = 1 * new Date();
+		  var a = e.createElement(n),
+			  m = e.getElementsByTagName(n)[0];
+		  a.async = 1;
+		  a.src = d;
+		  m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+		sender('b975d44b110749')
+	  </script>
 </body>
 </html>
