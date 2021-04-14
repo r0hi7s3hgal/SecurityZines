@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">  
+
+	<!-- OGF data -->
+	<meta property="og:title" content="Security Zines - SQL Injection" />
+	<meta property="og:description" content="Zine : SQLi" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://securityzines.com/zines/sqli.html" />
+	<meta property="og:image" content="https://securityzines.com/images/zines/sqli.png" />
+
+
+	<!-- SITE TITLE -->
+	<title>SQL Injection</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/templatemo-style.css">
+    
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/css/chat-bubble.css">
+	<link rel="stylesheet" href="/css/img-zoom.css">
+	<link rel="stylesheet" href="/css/chats.css">
+	<link rel="stylesheet" href="/css/downloadButton.css">
+
+
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+    <!-- Font family -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet"> 
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Indie+Flower&display=swap" rel="stylesheet"> 
+
+</head>
+<body data-spy="scroll" data-target="#rock-navigation">
+	<!-- START NAVIGATION -->
+	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand" style="font-family: 'Indie Flower';">Security Zines</a>
+			</div>
+			<nav class="collapse navbar-collapse" id="rock-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
+					<li><a href="https:/securityzines.com/#home" class="smoothScroll" style="font-family: 'Indie Flower';">Home</a></li>
+					<li><a href="https:/securityzines.com/#about-zines" class="smoothScroll" style="font-family: 'Indie Flower';">about-zines</a></li>
+					<li><a href="https:/securityzines.com/#zines" class="smoothScroll" style="font-family: 'Indie Flower';">Zines</a></li>
+					<!-- <li><a href="#tweets" class="smoothScroll" style="font-family: 'Indie Flower';">Popular Tweets</a></li> -->
+					<li><a href="https:/securityzines.com/#flyers" class="smoothScroll" style="font-family: 'Indie Flower';">Flyers</a></li>
+					<li><a href="https:/securityzines.com/#subscribe" class="smoothScroll" style="font-family: 'Indie Flower';">subscribe</a></li>
+					<li><a href="/faqs.html" class="smoothScroll" style="font-family: 'Indie Flower';">faqs</a></li>
+
+					<!-- <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+					<li><a href="#resume" class="smoothScroll">Resume</a></li>
+					<li><a href="#about" class="smoothScroll">About</a></li>
+					<li><a href="#contact" class="smoothScroll">Contact</a></li> -->
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+	<!-- END NAVIGATION -->
+	<!-- START HOME -->
+	<section id="home">
+		<div class="blackDiv">
+			<div class="row" style="height: 30%;">
+				<div class="col-md-2 col-sm-1">
+
+				</div>
+				<div class="col-md-8 col-sm-10">
+					<h1 class="tm-home" style="color:#fdc700;font-family: Lobster Two; font-size: 5em; text-align: center;">
+						<span class="underline-on-hover">
+							<a href="/" style="font-family: 'Indie Flower';">Security Zines</a>
+						</span>
+						
+					</h1>
+					&nbsp;
+					<h2 class="tm-home" style="color:#fdc700;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';">
+						Uncomplicated Explanations For Simple Security Topics by 
+							<span class="underline-on-hover-twitter-link">
+								<a href="https://twitter.com/sec_r0" style="font-family: 'Coming Soon', cursive;" target="_blank" rel="noopener noreferrer">
+									@sec_r0
+								</a> 
+							</a>
+					</h2>
+					&nbsp;
+                    <p>
+                        <h2 class="tm-home" style="color:#0079fa;font-family: Comic Sans MS, Comic Sans;">
+                            
+                        </h2>
+                    </p>
+                    <!-- <a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a> -->
+				</div>
+				<div class="col-md-2 col-sm-1">
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END HOME -->
+	
+	
+	<section id="faq">
+		<div class="container">
+			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<center>
+				  		<img id="img01" style="width:70%">
+					</center>
+				</div>
+			</div>
+			<div class="row">
+				<center>
+					<div class="talk-bubble tri-right round border">
+						<h1 class="tm-home" style="color:#fdc700;font-family: Lobster Two; font-size: 2em; text-align: center; margin: 10px	;">
+							<span class="underline-on-hover">
+								<a href="/zines/sqli.html" style="font-family: 'Indie Flower';">SQL Injection</a>
+							</span>
+							
+						</h1>
+					</div>
+				</center>
+					<br>
+					<div class="row" style="margin-top: 20px;">
+						<div class="col-md-6">
+							<img src="/images/chapters/sqlizine/frontmatter.jpg" style="width:39%;cursor:pointer; margin: 20px;" 
+							onclick="onClick(this)" class="w3-hover-opacity">
+
+							<img src="/images/chapters/sqlizine/index.jpg" style="width:39%;cursor:pointer" 
+							onclick="onClick(this)" class="w3-hover-opacity">
+						</div>
+						<div class="col-md-6" style="background-color: #333333; margin: auto;">
+							<span class="underline-on-hover">
+							
+								<h1 class="tm-home" style="color: aqua;font-family: 'Indie Flower'; font-size: 1.75em; text-align: center; margin: 20px;">
+									SQLi in Simple Terms
+								</h1>
+								<br>
+								
+								<p style="font-family: 'Indie Flower';color: #fdc700; font-size: 1.5em; margin: 20px;" >
+									This zine discusses SQL injection which is the server-side attack that can lead to DB content exfiltration and many other cases. The cool thing here is that this is a short yet complete read. I hope you will enjoy reading this short zine.
+									There an exercise in this zine, do try solving and share your solution with me over Twitter. 
+									<br><br>
+									I have covered: 
+									<font style="color: aqua;font-family: 'Indie Flower'; font-size: 1em; text-align: center; margin: 20px;">
+										What is SQLi, Why SQLi happens, Attack flow, SQLi Exercise, Union based SQLi, Types of SQLi, Ways to remediate SQLi bug.
+									</font>
+								</p>
+									
+								
+							</span>
+						</div>
+					</div>
+				
+					<center>
+						<br><br>
+						<a href="https://gum.co/sqlizine" target="_blank" rel="noopener noreferrer">
+							<button class="button">
+									I WANT THIS
+								<div class="button__horizontal"></div>
+								<div class="button__vertical"></div>
+							</button>
+						</a>
+					</center>
+				</div>
+			</div>
+		</section>
+
+	<section id="subscribe">
+		<div class="blackDiv flex-grow" style="margin-top: 20px;">
+			<div class="row">
+				<div class="col-md-4">
+					<!-- <div class="row">
+
+					</div>
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3" style="margin-top: 30%;">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					<div class="row"></div> -->
+				</div>
+				<div class="col-md-4" style="margin: 20px;">
+					<div class="sender-form-field" data-sender-form-id="kki827qd5763qk55t">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- <div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3" style="margin-top: 30%;">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="img-hover-zoom">
+								<a href="https://securityzines.com">
+									<img src="images/characters/icons/chrome.png" width="50%" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					<div class="row"></div> -->
+				</div>
+				</div>
+			</div>
+					
+		</div>
+	</section>
+	
+	<section id="license">
+		<div class="container flex-grow" style="margin-top: 20px;">
+			<h2 class="tm-home" style="columns: #333333;;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';">
+				© Rohit Sehgal <a href="https://twitter.com/sec_r0" style="font-family: 'Coming Soon', cursive;" target="_blank" rel="noopener noreferrer">
+					@sec_r0
+				</a> , 2021  &nbsp| &nbsp; All rights reservered, see <a href="/license.html">license</a>
+			</h2>
+		</div>
+	</section>
+
+	<!-- END CONTACT -->
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smoothscroll.js"></script>
+	<script src="/js/jquery.nav.js"></script>
+	<script src="/js/isotope.js"></script>
+	<script src="/js/imagesloaded.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<script src="/js/img-zoom.js"></script>
+	<script>
+		(function (s, e, n, d, er) {
+		  s['Sender'] = er;
+		  s[er] = s[er] || function () {
+			(s[er].q = s[er].q || []).push(arguments)
+		  }, s[er].l = 1 * new Date();
+		  var a = e.createElement(n),
+			  m = e.getElementsByTagName(n)[0];
+		  a.async = 1;
+		  a.src = d;
+		  m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+		sender('b975d44b110749')
+	  </script>
+</body>
+</html>
