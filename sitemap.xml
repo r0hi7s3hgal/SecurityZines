@@ -19,6 +19,12 @@
         <loc>/comics/template.html</loc>
     </url>
     <url>
+        <loc>/ppts/cybersecurityInIndia.html</loc>
+    </url>
+    <url>
+        <loc>/ppts/defendersGuideToKubernetes.html</loc>
+    </url>
+    <url>
         <loc>/zines/csrf.html</loc>
     </url>
     <url>
