@@ -1,533 +1,171 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
+<html lang="en" style="width: 100%;height: 100%;">
+
 <head>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVFC2Z0QEZ"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-SVFC2Z0QEZ');
-	</script>
-
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">  
-
-	<!-- OGF data -->
-	<meta property="og:title" content="Security Zines" />
-	<meta property="og:description" content="Uncomplicated explanations for simple security topics." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://securityzines.com" />
-	<meta property="og:image" content="https://securityzines.com/images/rohit.png" />
-
-	<!-- SITE TITLE -->
-	<title>Security Zines</title>
-
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/chat-bubble.css">
-	<link rel="stylesheet" href="css/img-zoom.css">
-
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    
-    <!-- Font family -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet"> 
-    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Indie+Flower&display=swap" rel="stylesheet"> 
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SecurityZines</title>
+    <meta property="og:image" content="../assets/img/comics/ssti.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="SecurityZines are new way of learning security concepts, check the collection of Zines down below. You can get them all in a bundle or individually. But why should you read it ? Because, its proven that graphics has more persistent memory than reading.">
+    <link rel="icon" type="image/png" sizes="420x594" href="assets/img/chrome.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bahianita&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coming+Soon&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/scale.compiled.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
-<body data-spy="scroll" data-target="#rock-navigation">
-	<!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand" style="font-family: 'Indie Flower';">Security Zines</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="#home" class="smoothScroll" style="font-family: 'Indie Flower';">Home</a></li>
-					<li><a href="#about-zines" class="smoothScroll" style="font-family: 'Indie Flower';">about-zines</a></li>
-					<li><a href="#zines" class="smoothScroll" style="font-family: 'Indie Flower';">Zines</a></li>
-					<!-- <li><a href="#tweets" class="smoothScroll" style="font-family: 'Indie Flower';">Popular Tweets</a></li> -->
-					<li><a href="#flyers" class="smoothScroll" style="font-family: 'Indie Flower';">Flyers</a></li>
-					<li><a href="#subscribe" class="smoothScroll" style="font-family: 'Indie Flower';">subscribe</a></li>
-					<li><a href="/faqs.html" class="smoothScroll" style="font-family: 'Indie Flower';">faqs</a></li>
-					<!-- <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#about" class="smoothScroll">About</a></li>
-					<li><a href="#contact" class="smoothScroll">Contact</a></li> -->
-				</ul>
-			</nav>
+<body style="width: 100%;height: 100%;">
+    <div class="container-fluid" style="width: 100%;padding-right: 0;padding-left: 0;margin: 0;margin-left: 0;background: #333333;height: 193px;">
+        <div class="row" style="height: 224px;width: 100%;margin-bottom: 10px;margin-left: 0;margin-right: 00;">
+            <div class="col text-nowrap text-truncate" style="border-radius: -2px;width: 100%;height: 100%;padding: 0;border-bottom: 47px dotted rgb(253,254,255) ;">
+                <h1 style="color: rgb(255,215,48);font-size: 44px;font-family: 'Indie Flower', serif;font-weight: bold;text-align: center;margin-top: 45px;text-shadow: 3px 0px 10px var(--bs-pink);"><a class="d-xxl-flex justify-content-xxl-center align-items-xxl-end" data-bss-hover-animate="pulse" href="/" style="color: rgb(244,59,82);font-size: 1.25em;height: 20%;margin-bottom: 15px;width: 100%;font-family: Aclonica, sans-serif;text-shadow: 3px 0px 0px var(--bs-cyan);">Security Zines</a></h1>
+                <h1 class="text-center flex-wrap" style="text-align: center;color: var(--bs-cyan);font-family: 'Advent Pro', sans-serif;font-size: 1.9em;margin: 0;margin-top: 0;transform: perspective(2500px) scale(1);margin-right: 0;margin-bottom: 0;margin-left: 0;border-bottom-style: none;border-bottom-color: rgb(83,217,244);">Simple explanations for security topics by&nbsp;<a href="https://twitter.com/sec_r0" target="_blank">Rohit</a></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="border-style: dashed;border-radius: 33px;margin-top: 2%;">
+        <div class="card" style="border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;">
+            <div class="card-body" style="padding: 11px;border-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"><p class="card-text" style="font-family: 'Gloria Hallelujah', serif;font-size: 20px;color: rgb(51,51,51);"><strong><b><u>SecurityZines</u></b></strong> are new way of learning security concepts, check the collection of Zines down below. You can get them all in a bundle or individually. But why should you read it ? Because, its proven that graphics has more persistent memory than reading. </p></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col" style="padding: 0;border-style: hidden;">
+                        <h4 class="text-center pulse animated infinite" style="color: rgb(51,51,51);font-size: 38px;font-family: Aclonica, sans-serif;margin: 10%;margin-top: 5%;margin-bottom: 5%;">Upcoming ...&nbsp;</h4><img data-bss-hover-animate="pulse" src="assets/img/CatCreatesBurpExtenderPlugins.png" style="width: 61%;margin: 20%;padding: -0;margin-top: 0;margin-bottom: 10%;box-shadow: 6px 6px 13px 3px var(--bs-gray);">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 0;">
+                <div class="row">
+                    <div class="col" style="padding: 0;">
+                        <h4 class="text-center" style="color: rgb(51,51,51);font-size: 38px;font-family: Aclonica, sans-serif;margin-top: 5%;margin-bottom: 5%;">New Launch !!</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin: 10%;">
+                    <div class="col" style="padding: 0;"><img data-bss-hover-animate="pulse" src="assets/img/zines/docker.jpg" style="width: 100%;text-shadow: 16px 14px 2px;box-shadow: 6px 6px 13px 3px var(--bs-secondary);"></div>
+                    <div class="col"><img data-bss-hover-animate="pulse" src="assets/img/comics/ssti.jpg" style="width: 100%;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="border-radius: 32px;border-style: none;border-color: var(--bs-pink);">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="border-style: none;border-color: var(--bs-pink);">
+                    <div class="card-body" style="border-style: none;">
+                        <h4 class="card-title" style="color: rgb(51,51,51);font-size: 40px;font-family: Aclonica, sans-serif;text-align: center;">All Zines ...</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="zines/zines-bundle.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/bundle.png" style="width: 81%;margin-left: 34px;margin-top: 4px;box-shadow: 6px 6px 12px;" loading="lazy"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/docker.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/docker.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/webauth.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/webauth.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/sop.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/sop.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="zines/saml.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/saml.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/csrf.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/csrf.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/sqli.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/sqli.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/xss.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/xss.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="zines/hashing.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/hashing.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="zines/http.html"><img data-bss-hover-animate="pulse" src="assets/img/zines/http.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+        </div>
+    </div>
+    <div class="container" style="border-radius: 32px;margin-top: 0;border-style: none;">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="border-style: none;border-color: var(--bs-pink);">
+                    <div class="card-body" style="border-style: none;margin-top: 30px;">
+                        <h4 class="card-title" style="color: rgb(51,51,51);font-size: 40px;font-family: Aclonica, sans-serif;text-align: center;">Comics !!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="comics/hrs.html"><img data-bss-hover-animate="pulse" src="assets/img/comics/hrs.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="comics/ssti.html"><img data-bss-hover-animate="pulse" src="assets/img/comics/ssti.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="comics/oidc.html"><img data-bss-hover-animate="pulse" src="assets/img/comics/oidc.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="comics/k8s.html"><img data-bss-hover-animate="pulse" src="assets/img/comics/k8s.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="comics/dind.html"><img data-bss-hover-animate="pulse" src="assets/img/comics/dind.jpg" style="width: 80%;margin: 10%;margin-top: 0;box-shadow: 6px 6px 13px 3px var(--bs-gray);"></a></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+        </div>
+    </div>
+    <div class="container" style="border-radius: 32px;margin-top: 0;border-style: none;">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="border-style: none;border-color: var(--bs-pink);">
+                    <div class="card-body" style="border-style: none;">
+                        <h4 class="card-title" style="color: rgb(51,51,51);font-size: 40px;font-family: Aclonica, sans-serif;text-align: center;margin-top: 11px;">Presentations !!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="comics/hrs.html"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="comics/ssti.html"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="comics/oidc.html"></a></div>
+            <div class="col-md-3" style="padding: 0;"><a href="comics/k8s.html"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0;"></div>
+            <div class="col-md-3" style="padding: 0px;padding-left: 0px;"><a href="#">Coming soon !!</a></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+            <div class="col-md-3" style="padding: 0;"></div>
+        </div>
+    </div>
+    <footer class="footer-dark" style="margin-top: 5%;">
+        <div class="container">
+            <div class="row"><script>
+  (function (s, e, n, d, er) {
+    s['Sender'] = er;
+    s[er] = s[er] || function () {
+      (s[er].q = s[er].q || []).push(arguments)
+    }, s[er].l = 1 * new Date();
+    var a = e.createElement(n),
+        m = e.getElementsByTagName(n)[0];
+    a.async = 1;
+    a.src = d;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  sender('b975d44b110749')
+</script>
 
-		</div>
-	</div>
-	<!-- END NAVIGATION -->
-	<!-- START HOME -->
-	<section id="home">
-		<div class="blackDiv">
-			<div class="row" style="height: 30%;">
-				<div class="col-md-2 col-sm-1">
-
-				</div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home" style="color:#fdc700;font-family: Lobster Two; font-size: 5em; text-align: center;">
-						<span class="underline-on-hover">
-							<a href="/" style="font-family: 'Indie Flower';">Security Zines</a>
-						</span>
-						
-					</h1>
-					&nbsp;
-					<h2 class="tm-home" style="color:#fdc700;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';">
-						Uncomplicated Explanations For Simple Security Topics by 
-							<span class="underline-on-hover-twitter-link">
-								<a href="https://twitter.com/sec_r0" style="font-family: 'Coming Soon', cursive;" target="_blank" rel="noopener noreferrer">
-									@sec_r0
-								</a> 
-							</a>
-					</h2>
-					&nbsp;
-                    <p>
-                        <h2 class="tm-home" style="color:#0079fa;font-family: Comic Sans MS, Comic Sans;">
-                            
-                        </h2>
-                    </p>
-                    <!-- <a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a> -->
-				</div>
-				<div class="col-md-2 col-sm-1">
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END HOME -->
-	
-	<!-- START about-zines -->
-	<section id="about-zines">
-		<div class="container flex-grow">
-			<div class="row">
-				<center>
-					<div class="talk-bubble tri-right left-top round border">
-						<div class="talktext">
-							<p style="font-family: 'Indie Flower'; font-size: 20px;color: #fdc700;">
-								<a href="https://twitter.com/sec_r0">
-									<img src="images/characters/rohit-yellow.png" align="left" width="175em" style="padding-top: 2px;"/>
-								</a>
-								Hey There, I am <u><b>Rohit</b></u>, you can call me <u><b>RO</b></u>.
-								<br><br>
-								I write uncomplicated explanations for security topics.
-								<br>
-								I have them listed down here.
-								<br><br>
-								Next Zine I am working on : 
-								<a href="https://twitter.com/sec_r0/status/1384549924210188288" style="font-family: 'Coming Soon', cursive;" target="_blank" rel="noopener noreferrer">
-									<u>Docker<u>
-								</a>
-								<br>
-								<font style="font-family: 'Indie Flower'; font-size: 20px;color: white;">
-									Click me to know me. 
-									<img src="images/characters/ro-face-laugh.png"  width="50px"/>
-								</font>
-							</p>
-						</div>
-					</div>
-				</center>
-			</div>
-		</div>
-	</section>
-
-    <!-- START zines -->
-	<section id="zines">
-		<div class="container">
-			<h2 style="columns: #333333;font-family: 'Indie Flower'; font-size: 3em;">Zines</h2>
-			<div class="row" style="margin-top: 20px;">
-				<div class="col-md-2 col-sm-3">
-					<div class="parent">
-						<div class="img-hover-zoom">
-							<img class="image1" src="images/zines/docker.png" style="width: 150%;"/>
-						</div>
-						<coming-soon></coming-soon>
-						
-					</div>
-				</div>
-
-				<div class="col-md-2 col-sm-3" style="margin-left: 100px;">
-					<div class="parent">
-						<div class="img-hover-zoom">
-							<img class="image1" src="images/zines/CatCreatesBurpExtenderPlugins.png" style="width: 150%;"/>
-						</div>
-						<coming-soon></coming-soon>
-						
-					</div>
-				</div>
-
-			</div>
-
-			
-
-			<div class="row">
-				<div class="col-md-offset-1 col-md-11">						
-				</div>
-				<div class="row" style="margin-top: 20px;">
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/authzine.html">
-									<img class="image1" src="images/zines/auth.png" style="width: 90%;"/>
-								</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/sop.html">
-									<img class="image1" src="images/zines/sop.png" style="width: 90%;"/>
-								</a>
-							</div>							
-						</div>
-					</div>
-
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/hashing.html">
-									<img class="image1" src="images/zines/hashing.png" style="width: 90%;"/>
-								</a>
-							</div>							
-						</div>
-					</div>
-
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/sqli.html">
-									<img class="image1" src="images/zines/sqli.png" style="width: 90%;"/>
-								</a>
-							</div>							
-						</div>
-					</div>
-					
-
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/http.html">
-									<img class="image1" src="images/zines/http.png" style="width: 90%;"/>
-								</a>
-							</div>							
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/saml.html">
-									<img class="image1" src="images/zines/saml.png" style="width: 90%;"/>
-								</a>
-							</div>							
-						</div>
-					</div>
-				</div>
-
-				<div class="row" style="margin-top: 20px;">
-
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/xsszine.html">
-									<img class="image1" src="images/zines/xss.png" style="width: 90%;"/>
-								</a>
-							</div>							
-						</div>
-					</div>
-
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<a href="/zines/csrfzine.html">
-									<img class="image1" src="images/zines/csrf.png" style="width: 90%;"/>
-								</a>
-							</div>
-							
-						</div>
-					</div>
-
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<img class="image1" src="images/zines/oauth2.1.png" style="width: 90%;"/>
-							</div>
-							<coming-soon></coming-soon>
-							
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- <section id="tweets">
-		<div class="conainer blackDiv">
-			<div class="row">
-				<h2 style="color: #fdc73f;font-family: 'Indie Flower'; font-size: 3em;">Cat Creates</h2>
-
-				<div class="col-md-3">
-				</div>
-
-				<div class="col-md-3">
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<div class="img-hover-zoom">
-								<img class="image1" src="images/zines/oauth2.1.png" style="width: 200%;"/>
-							</div>
-							<coming-soon></coming-soon>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-				</div>
-
-				<div class="col-md-3">
-				</div>
-
-				<div>
-			</div>
-		</div>
-	</section> -->
-
-	<section id="all my characters">
-		<div class="blackDiv">
-			<h2 style="color: #fdc700;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';margin:20px">
-				Learn Burp hacks for bounties through tweets.
-			</h2>
-			<h4 style="color:white; text-align: center; font-family:'Courier New', Courier, monospace; font-size: small;margin-top: -5px;">
-				And take your Burp Suite Skills to next level.
-			</h4>
-
-			<div class="row" style="overflow-x:auto;">
-				<div class="col-md-2"  style='margin: 10px;'>			
-					<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://t.co/F8Zx5PsNwN">pic.twitter.com/F8Zx5PsNwN</a></p>&mdash; Rohit (@sec_r0) <a href="https://twitter.com/sec_r0/status/1392783689155633153?ref_src=twsrc%5Etfw">May 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 				
-				</div>
-				<div class="col-md-2"  style='margin: 10px;'>			
-					<blockquote class="twitter-tweet"><p lang="en" dir="ltr">♥️ <a href="https://twitter.com/hashtag/BurpHacksForBounties?src=hash&amp;ref_src=twsrc%5Etfw">#BurpHacksForBounties</a> - Day 3/30 ♥️<br><br>🔍🔎<br>Find References: The most underrated and underused feature of <a href="https://twitter.com/Burp_Suite?ref_src=twsrc%5Etfw">@Burp_Suite</a> <br><br>Pro Only &amp; Can find references for URIs across the entire Burp.<br><br>A short thread : 🧵👇<a href="https://twitter.com/hashtag/infosec?src=hash&amp;ref_src=twsrc%5Etfw">#infosec</a> <a href="https://twitter.com/hashtag/appsec?src=hash&amp;ref_src=twsrc%5Etfw">#appsec</a> <a href="https://twitter.com/hashtag/security?src=hash&amp;ref_src=twsrc%5Etfw">#security</a> <a href="https://twitter.com/hashtag/burp?src=hash&amp;ref_src=twsrc%5Etfw">#burp</a> <a href="https://twitter.com/hashtag/bugbountytip?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytip</a> <a href="https://twitter.com/hashtag/bugbountytips?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytips</a> <a href="https://t.co/Dv3ELmtvJA">pic.twitter.com/Dv3ELmtvJA</a></p>&mdash; Rohit (@sec_r0) <a href="https://twitter.com/sec_r0/status/1392423235761831939?ref_src=twsrc%5Etfw">May 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-				</div>
-				<div class="col-md-2"  style='margin: 10px;'>			
-					<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/BurpHacksForBounties?src=hash&amp;ref_src=twsrc%5Etfw">#BurpHacksForBounties</a> - Day 2/30<br><br>Effective usage of Match and Replace feature of <a href="https://twitter.com/Burp_Suite?ref_src=twsrc%5Etfw">@Burp_Suite</a> <br><br>False2True Trick &amp; Injecting all fields with polyglot payloads 😉😉<br><br>How to thread 🧵👇<a href="https://twitter.com/hashtag/infosec?src=hash&amp;ref_src=twsrc%5Etfw">#infosec</a> <a href="https://twitter.com/hashtag/security?src=hash&amp;ref_src=twsrc%5Etfw">#security</a> <a href="https://twitter.com/hashtag/appsec?src=hash&amp;ref_src=twsrc%5Etfw">#appsec</a> <a href="https://twitter.com/hashtag/burp?src=hash&amp;ref_src=twsrc%5Etfw">#burp</a> <a href="https://twitter.com/hashtag/bugbounty?src=hash&amp;ref_src=twsrc%5Etfw">#bugbounty</a> <a href="https://twitter.com/hashtag/bugbountytips?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytips</a> <a href="https://t.co/fyqyBnnJ3Z">pic.twitter.com/fyqyBnnJ3Z</a></p>&mdash; Rohit (@sec_r0) <a href="https://twitter.com/sec_r0/status/1392039712425082880?ref_src=twsrc%5Etfw">May 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 				
-				</div>
-				<div class="col-md-2"  style='margin: 10px;'>			
-					<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/BurpHacksForBounties?src=hash&amp;ref_src=twsrc%5Etfw">#BurpHacksForBounties</a> - Day 1/30<br><br>Turbo intruder: Power of Python with <a href="https://twitter.com/Burp_Suite?ref_src=twsrc%5Etfw">@Burp_Suite</a> Intruder.<br><br>I use it to tailor my pen-testing for a specific target and targetted <a href="https://twitter.com/hashtag/bugbounty?src=hash&amp;ref_src=twsrc%5Etfw">#bugbounty</a> <a href="https://twitter.com/hashtag/infosec?src=hash&amp;ref_src=twsrc%5Etfw">#infosec</a> <a href="https://twitter.com/hashtag/appsec?src=hash&amp;ref_src=twsrc%5Etfw">#appsec</a> <a href="https://twitter.com/hashtag/bugbountytips?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytips</a> <a href="https://twitter.com/hashtag/bugbountytip?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytip</a> <a href="https://twitter.com/hashtag/security?src=hash&amp;ref_src=twsrc%5Etfw">#security</a><br>How to - 🧵🙃👇 <a href="https://t.co/LyiG9PGYq1">pic.twitter.com/LyiG9PGYq1</a></p>&mdash; Rohit (@sec_r0) <a href="https://twitter.com/sec_r0/status/1391602765336432643?ref_src=twsrc%5Etfw">May 10, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 				
-				</div>
-				<div class="col-md-2"  style='margin: 10px;'>			
-					<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚨🚨<br>I am starting the <a href="https://twitter.com/hashtag/BurpHacksForBounties?src=hash&amp;ref_src=twsrc%5Etfw">#BurpHacksForBounties</a> series for 30 days, each day will share a Burp hack, which makes my working with <a href="https://twitter.com/Burp_Suite?ref_src=twsrc%5Etfw">@Burp_Suite</a> easier.<br><br>Starting Monday. Stay tuned.<br><br>They will not be the ones you find on the internet 😉😉<a href="https://twitter.com/hashtag/infosec?src=hash&amp;ref_src=twsrc%5Etfw">#infosec</a> <a href="https://twitter.com/hashtag/appsec?src=hash&amp;ref_src=twsrc%5Etfw">#appsec</a> <a href="https://twitter.com/hashtag/bugbounties?src=hash&amp;ref_src=twsrc%5Etfw">#bugbounties</a> <a href="https://twitter.com/hashtag/bugbountytips?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytips</a> <a href="https://t.co/qR7No7fliL">pic.twitter.com/qR7No7fliL</a></p>&mdash; Rohit (@sec_r0) <a href="https://twitter.com/sec_r0/status/1390690103735906304?ref_src=twsrc%5Etfw">May 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 			
-				</div>
-			</div>
-			
-		</div>
-	</section>
-
-	<section id='flyers'>
-		<div class="container">
-			<h2 style="columns: #333333;font-family: 'Indie Flower'; font-size: 3em;">Flyers</h2>
-			<div class="row">
-				<div class="col-md-offset-1 col-md-11">						
-				</div>
-				<div class="row" style="margin-top: 20px;">
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/httpstatus.png" style="width:90%;cursor:pointer;border: white;" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/jwt.png" style="width:90%;cursor:pointer" 
-				  			onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/imlicit-code.png" style="width:90%;cursor:pointer" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/password-grant.png" style="width:90%;cursor:pointer" 
-				  			onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/http0.9.png" style="width:90%;cursor:pointer" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/authcode.png" style="width:90%;cursor:pointer" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-					</div>
-					<br>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/dos.png" style="width:90%;cursor:pointer" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-							<h3 style="color:#333333; text-align: center; font-family:'Courier New', Courier, monospace; margin-right: auto; font-size: large; margin-left: -10%; margin-top: 10%;">
-								DOS by
-								<a href="https://twitter.com/0x1shu" style="font-family: 'Indie Flower';color: darkcyan;" target="_blank" rel="noopener noreferrer">
-									@0x1shu
-								</a> 
-							</h3>
-							<h4 style="color:#333333; text-align: center; font-family:'Courier New', Courier, monospace; margin-right: auto; font-size: small; margin-left: -10%;margin-top: -5%;">In Bollywood style</h4>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3">
-						<div class="parent">
-							<img src="images/flyers/firewall.svg" style="width:90%;cursor:pointer" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-							<h3 style="color:#333333; text-align: center; font-family:'Courier New', Courier, monospace; margin-right: auto; font-size: large; margin-left: -10%; margin-top: 10%;">
-								Firewall by
-								<a href="https://twitter.com/0x1shu" style="font-family: 'Indie Flower';color: darkcyan;" target="_blank" rel="noopener noreferrer">
-									@0x1shu
-								</a> 
-							</h3>
-							<h4 style="color:#333333; text-align: center; font-family:'Courier New', Courier, monospace; margin-right: auto; font-size: small; margin-left: -10%;margin-top: -5%;">In Bollywood style</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-			  
-			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-				<div class="w3-modal-content w3-animate-zoom">
-					<center>
-				  		<img id="img01" style="width:100%">
-					</center>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="subscribe">
-		<div class="blackDiv flex-grow" style="margin-top: 20px;">
-			<div class="row">
-				<div class="col-md-4">
-					<!-- <div class="row">
-
-					</div>
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-3" style="margin-top: 30%;">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
-					</div>
-					<div class="row"></div> -->
-				</div>
-				<div class="col-md-4" style="margin: 20px;">
-					<div class="sender-form-field" data-sender-form-id="kki827qd5763qk55t">
-					</div>
-				</div>
-				<div class="col-md-4">
-					<!-- <div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-3" style="margin-top: 30%;">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
-					</div>
-					<div class="row"></div> -->
-				</div>
-				</div>
-			</div>
-					
-		</div>
-	</section>
-
-	<section id="subscribe">
-		<div class="container flex-grow" style="margin-top: 20px;">
-			<h2 class="tm-home" style="columns: #333333;;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';">
-				© Rohit Sehgal <a href="https://twitter.com/sec_r0" style="font-family: 'Coming Soon', cursive;" target="_blank" rel="noopener noreferrer">
-					@sec_r0
-				</a> , 2021  &nbsp| &nbsp; All rights reservered, see <a href="/license.html">license</a>
-			</h2>
-		</div>
-	</section>
-
-	<!-- END CONTACT -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/isotope.js"></script>
-	<script src="js/imagesloaded.min.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="js/img-zoom.js"></script>
-	<script>
-		(function (s, e, n, d, er) {
-		  s['Sender'] = er;
-		  s[er] = s[er] || function () {
-			(s[er].q = s[er].q || []).push(arguments)
-		  }, s[er].l = 1 * new Date();
-		  var a = e.createElement(n),
-			  m = e.getElementsByTagName(n)[0];
-		  a.async = 1;
-		  a.src = d;
-		  m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-		sender('b975d44b110749')
-	  </script>
+<div style="text-align: center" class="sender-form-field" data-sender-form-id="kki827qd5763qk55t"></div>
+</div>
+            <div class="col item social" style="margin-top: 0;"><a href="#" style="width: 41px;height: 40px;"><i class="icon ion-social-facebook" style="font-size: 36px;"></i></a><a href="https://twitter.com/sec_r0" style="font-size: 33px;"><i class="icon ion-social-twitter"></i></a><a href="https://www.instagram.com/securityzines/" style="font-size: 33px;"><i class="icon ion-social-instagram"></i></a></div>
+            <p class="copyright" style="font-family: Aclonica, sans-serif;font-size: 20px;">Rohit Sehgal, SecurityZines © 2021, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
+
 </html>

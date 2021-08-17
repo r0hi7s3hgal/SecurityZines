@@ -1,278 +1,93 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
+<html lang="en" style="width: 100%;height: 100%;">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">  
-
-	<!-- OGF data -->
-	<meta property="og:title" content="Security Zines - Same Origin Policy" />
-	<meta property="og:description" content="Zine : Same Origin Policy" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://securityzines.com/zines/sop.html" />
-	<meta property="og:image" content="https://securityzines.com/images/zines/sop.png" />
-
-
-	<!-- SITE TITLE -->
-	<title>Same Origin Policy</title>
-
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/templatemo-style.css">
-    
-	<link rel="stylesheet" href="/css/custom.css">
-	<link rel="stylesheet" href="/css/chat-bubble.css">
-	<link rel="stylesheet" href="/css/img-zoom.css">
-	<link rel="stylesheet" href="/css/chats.css">
-	<link rel="stylesheet" href="/css/downloadButton.css">
-
-
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    
-    <!-- Font family -->
-    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Indie+Flower&display=swap" rel="stylesheet"> 
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SecurityZines</title>
+    <meta property="og:image" content="../assets/img/comics/ssti.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="SecurityZines are new way of learning security concepts, check the collection of Zines down below. You can get them all in a bundle or individually. But why should you read it ? Because, its proven that graphics has more persistent memory than reading.">
+    <link rel="icon" type="image/png" sizes="420x594" href="../assets/img/chrome.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bahianita&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coming+Soon&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="../assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/scale.compiled.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/Team-Boxed.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
 </head>
-<body data-spy="scroll" data-target="#rock-navigation">
-	<!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand" style="font-family: 'Indie Flower';">Security Zines</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="https:/securityzines.com/#home" class="smoothScroll" style="font-family: 'Indie Flower';">Home</a></li>
-					<li><a href="https:/securityzines.com/#about-zines" class="smoothScroll" style="font-family: 'Indie Flower';">about-zines</a></li>
-					<li><a href="https:/securityzines.com/#zines" class="smoothScroll" style="font-family: 'Indie Flower';">Zines</a></li>
-					<!-- <li><a href="#tweets" class="smoothScroll" style="font-family: 'Indie Flower';">Popular Tweets</a></li> -->
-					<li><a href="https:/securityzines.com/#flyers" class="smoothScroll" style="font-family: 'Indie Flower';">Flyers</a></li>
-					<li><a href="https:/securityzines.com/#subscribe" class="smoothScroll" style="font-family: 'Indie Flower';">subscribe</a></li>
-					<li><a href="/faqs.html" class="smoothScroll" style="font-family: 'Indie Flower';">faqs</a></li>
+<body style="width: 100%;height: 100%;">
+    <div class="container-fluid" style="width: 100%;padding-right: 0;padding-left: 0;margin: 0;margin-left: 0;background: #333333;height: 197px;">
+        <div class="row" style="height: 224px;width: 100%;margin-bottom: 10px;margin-left: 0;margin-right: 00;">
+            <div class="col text-nowrap text-truncate text-start" style="border-radius: -2px;width: 100%;height: 100%;padding: 0;border-bottom: 47px dotted rgb(253,254,255) ;">
+                <h1 style="color: rgb(255,215,48);font-size: 44px;font-family: 'Indie Flower', serif;font-weight: bold;text-align: center;margin-top: 45px;text-shadow: 3px 0px 10px var(--bs-pink);"><a class="d-xxl-flex justify-content-xxl-center align-items-xxl-end" data-bss-hover-animate="pulse" href="/" style="color: rgb(244,59,82);font-size: 1em;height: 20%;margin-bottom: 15px;width: 100%;font-family: Aclonica, sans-serif;text-shadow: 3px 0px 0px var(--bs-cyan);">Security Zines</a></h1>
+                <h1 class="text-center d-flex justify-content-center flex-wrap" style="text-align: center;color: var(--bs-cyan);font-family: 'Advent Pro', sans-serif;font-size: 22px;margin: 0;margin-top: 0;transform: perspective(2500px) scale(1);margin-right: 0;margin-bottom: 0;margin-left: 0;border-bottom-style: none;border-bottom-color: rgb(83,217,244);">Simple explanations for security topics by&nbsp;<a href="https://twitter.com/sec_r0" target="_blank">Rohit</a></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="border-radius: 32px;border-style: none;border-color: var(--bs-pink);">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="border-style: none;border-color: var(--bs-pink);">
+                    <div class="card-body" style="border-style: none;">
+                        <h4 class="card-title" style="color: rgb(51,51,51);font-size: 2.5em;font-family: Aclonica, sans-serif;text-align: center;">Same Origin Policy Zine</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"><img class="img-fluid" src="../assets/img/zines/sop.jpg" style="width: 71%;filter: brightness(94%) contrast(116%);margin-right: 15%;margin-left: 15%;" loading="lazy"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col" style="width: 100%;margin-top: 0px;margin-left: 0;">
+                        <p style="text-align: center;margin-top: 1%;font-size: 22px;font-family: 'Advent Pro', sans-serif;">This Zine discusses about the&nbsp;<strong>Same Origin Policy</strong>&nbsp;which is a&nbsp;<strong>browser security model</strong>&nbsp;to protect user data from malicious sites/scripts by restriction access for cross-site interaction. It explains in and out of SOP in a very casual way by showing them in the graphics for better retention.<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center"><a class="btn btn-primary btn-lg text-center d-flex flex-column align-items-center justify-content-xxl-center align-items-xxl-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;box-shadow: 2px 4px 14px var(--bs-pink);font-family: Aclonica, sans-serif;font-size: 1em;background: rgb(244,59,82);border-style: none;border-top-style: none;color: rgb(255, 255, 255);padding: 0;padding-left: 0;width: 19%;height: 52px;margin-top: 24px;" href="https://securityzines.gumroad.com/l/sopzine" target="_blank">Grab It Here</a></div>
+    <footer class="footer-dark" style="margin-top: 5%;">
+        <div class="container">
+            <div class="row"><script>
+  (function (s, e, n, d, er) {
+    s['Sender'] = er;
+    s[er] = s[er] || function () {
+      (s[er].q = s[er].q || []).push(arguments)
+    }, s[er].l = 1 * new Date();
+    var a = e.createElement(n),
+        m = e.getElementsByTagName(n)[0];
+    a.async = 1;
+    a.src = d;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  sender('b975d44b110749')
+</script>
 
-					<!-- <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#about" class="smoothScroll">About</a></li>
-					<li><a href="#contact" class="smoothScroll">Contact</a></li> -->
-				</ul>
-			</nav>
-
-		</div>
-	</div>
-	<!-- END NAVIGATION -->
-	<!-- START HOME -->
-	<section id="home">
-		<div class="blackDiv">
-			<div class="row" style="height: 30%;">
-				<div class="col-md-2 col-sm-1">
-
-				</div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home" style="color:#fdc700;font-family: Lobster Two; font-size: 5em; text-align: center;">
-						<span class="underline-on-hover">
-							<a href="/" style="font-family: 'Indie Flower';">Security Zines</a>
-						</span>
-						
-					</h1>
-					&nbsp;
-					<h2 class="tm-home" style="color:#fdc700;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';">
-						Uncomplicated Explanations For Simple Security Topics by 
-							<span class="underline-on-hover-twitter-link">
-								<a href="https://twitter.com/sec_r0" style="font-family: 'Indie Flower'; color: aquamarine;">
-									@sec_r0
-								</a> 
-							</a>
-					</h2>
-					&nbsp;
-                    <p>
-                        <h2 class="tm-home" style="color:#0079fa;font-family: Comic Sans MS, Comic Sans;">
-                            
-                        </h2>
-                    </p>
-                    <!-- <a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a> -->
-				</div>
-				<div class="col-md-2 col-sm-1">
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END HOME -->
-	
-	
-	<section id="faq">
-		<div class="container">
-			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-				<div class="w3-modal-content w3-animate-zoom">
-					<center>
-				  		<img id="img01" style="width:70%">
-					</center>
-				</div>
-			</div>
-			<div class="row">
-				<center>
-					<div class="talk-bubble tri-right round border">
-						<h1 class="tm-home" style="color:#fdc700;font-family: Lobster Two; font-size: 2em; text-align: center; margin: 10px	;">
-							<span class="underline-on-hover">
-								<a href="/zines/sop.html" style="font-family: 'Indie Flower';">Same Origin Policy</a>
-							</span>
-							
-						</h1>
-					</div>
-				</center>
-					<br>
-					<div class="row" style="margin-top: 20px;">
-						<div class="col-md-6">
-							<img src="/images/chapters/sopzine/frontmatter.png" style="width:39%;cursor:pointer; margin: 20px;" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-
-							<img src="/images/chapters/sopzine/index.png" style="width:39%;cursor:pointer" 
-							onclick="onClick(this)" class="w3-hover-opacity">
-						</div>
-						<div class="col-md-6" style="background-color: #333333; margin: auto;">
-							<span class="underline-on-hover">
-							
-								<h1 class="tm-home" style="color: aqua;font-family: 'Indie Flower'; font-size: 1.75em; text-align: center; margin: 20px;">
-									SOP in Simple Terms
-								</h1>
-								<br>
-								
-								<p style="font-family: 'Indie Flower';color: #fdc700; font-size: 1.5em; margin: 20px;" >
-									This Zine discusses the Same Origin policy which is a browser security model to protect user data from malicious sites/scripts by restriction access for cross-site interaction. This zine explains in and out of SOP in a very casual way of showing them in the infographics. 
-
-									<br><br>
-									I have covered: 
-									<font style="color: aqua;font-family: 'Indie Flower'; font-size: 1em; text-align: center; margin: 20px;">
-										SOP, Need for SOP, Bypassing SOP, CORS headers - Access-Control-Allow-Origin, Access-Control-Allow-Credentials.
-									</font>
-								</p>
-									
-								
-							</span>
-						</div>
-					</div>
-				
-					<center>
-						<br><br>
-						<a href="https://gum.co/sopzine" target="_blank" rel="noopener noreferrer">
-							<button class="button">
-									I WANT THIS
-								<div class="button__horizontal"></div>
-								<div class="button__vertical"></div>
-							</button>
-						</a>
-					</center>
-				</div>
-			</div>
-		</section>
-
-	<section id="subscribe">
-		<div class="blackDiv flex-grow" style="margin-top: 20px;">
-			<div class="row">
-				<div class="col-md-4">
-					<!-- <div class="row">
-
-					</div>
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-3" style="margin-top: 30%;">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
-					</div>
-					<div class="row"></div> -->
-				</div>
-				<div class="col-md-4" style="margin: 20px;">
-					<div class="sender-form-field" data-sender-form-id="kki827qd5763qk55t">
-					</div>
-				</div>
-				<div class="col-md-4">
-					<!-- <div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-3" style="margin-top: 30%;">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="img-hover-zoom">
-								<a href="https://securityzines.com">
-									<img src="images/characters/icons/chrome.png" width="50%" />
-								</a>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
-					</div>
-					<div class="row"></div> -->
-				</div>
-				</div>
-			</div>
-					
-		</div>
-	</section>
-	
-	<section id="license">
-		<div class="container flex-grow" style="margin-top: 20px;">
-			<h2 class="tm-home" style="columns: #333333;;font-size: 1.5em; text-align: center; font-family: 'Indie Flower';">
-				© Rohit Sehgal <a href="https://twitter.com/sec_r0" target="_blank" rel="noopener noreferrer">@sec_r0</a>, 2021  &nbsp| &nbsp; All rights reservered, see <a href="/license.html">license</a>
-			</h2>
-		</div>
-	</section>
-
-	<!-- END CONTACT -->
-	<script src="/js/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/smoothscroll.js"></script>
-	<script src="/js/jquery.nav.js"></script>
-	<script src="/js/isotope.js"></script>
-	<script src="/js/imagesloaded.min.js"></script>
-	<script src="/js/custom.js"></script>
-	<script src="/js/img-zoom.js"></script>
-	<script>
-		(function (s, e, n, d, er) {
-		  s['Sender'] = er;
-		  s[er] = s[er] || function () {
-			(s[er].q = s[er].q || []).push(arguments)
-		  }, s[er].l = 1 * new Date();
-		  var a = e.createElement(n),
-			  m = e.getElementsByTagName(n)[0];
-		  a.async = 1;
-		  a.src = d;
-		  m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-		sender('b975d44b110749')
-	  </script>
+<div style="text-align: center" class="sender-form-field" data-sender-form-id="kki827qd5763qk55t"></div>
+</div>
+            <div class="col item social" style="margin-top: 0;"><a href="#" style="width: 41px;height: 40px;"><i class="icon ion-social-facebook" style="font-size: 36px;"></i></a><a href="https://twitter.com/sec_r0" style="font-size: 33px;"><i class="icon ion-social-twitter"></i></a><a href="https://www.instagram.com/securityzines/" style="font-size: 33px;"><i class="icon ion-social-instagram"></i></a></div>
+            <p class="copyright" style="font-family: Aclonica, sans-serif;font-size: 20px;">Rohit Sehgal, SecurityZines © 2021, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
 </body>
+
 </html>
