@@ -1,102 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>/books/BurpPluginDev.html</loc>
+        <loc>https://securityzines.com/books/BurpPluginDev.html</loc>
     </url>
     <url>
-        <loc>/flyers/printable/h2c.html</loc>
+        <loc>https://securityzines.com/flyers/printable/h2c.html</loc>
     </url>
     <url>
-        <loc>/flyers/printable/hrs.html</loc>
+        <loc>https://securityzines.com/flyers/printable/hrs.html</loc>
     </url>
     <url>
-        <loc>/flyers/printable/idor.html</loc>
+        <loc>https://securityzines.com/flyers/printable/idor.html</loc>
     </url>
     <url>
-        <loc>/flyers/printable/lfi.html</loc>
+        <loc>https://securityzines.com/flyers/printable/lfi.html</loc>
     </url>
     <url>
-        <loc>/flyers/printable/rfi.html</loc>
+        <loc>https://securityzines.com/flyers/printable/rfi.html</loc>
     </url>
     <url>
-        <loc>/flyers/printable/ssti.html</loc>
+        <loc>https://securityzines.com/flyers/printable/rxss.html</loc>
     </url>
     <url>
-        <loc>/flyers/dind.html</loc>
+        <loc>https://securityzines.com/flyers/printable/ssti.html</loc>
     </url>
     <url>
-        <loc>/flyers/h2c.html</loc>
+        <loc>https://securityzines.com/flyers/dind.html</loc>
     </url>
     <url>
-        <loc>/flyers/hrs.html</loc>
+        <loc>https://securityzines.com/flyers/h2c.html</loc>
     </url>
     <url>
-        <loc>/flyers/idor.html</loc>
+        <loc>https://securityzines.com/flyers/hrs.html</loc>
     </url>
     <url>
-        <loc>/flyers/k8s.html</loc>
+        <loc>https://securityzines.com/flyers/idor.html</loc>
     </url>
     <url>
-        <loc>/flyers/lfi.html</loc>
+        <loc>https://securityzines.com/flyers/k8s.html</loc>
     </url>
     <url>
-        <loc>/flyers/oidc.html</loc>
+        <loc>https://securityzines.com/flyers/lfi.html</loc>
     </url>
     <url>
-        <loc>/flyers/redos.html</loc>
+        <loc>https://securityzines.com/flyers/oidc.html</loc>
     </url>
     <url>
-        <loc>/flyers/rfi.html</loc>
+        <loc>https://securityzines.com/flyers/redos.html</loc>
     </url>
     <url>
-        <loc>/flyers/rxss.html</loc>
+        <loc>https://securityzines.com/flyers/rfi.html</loc>
     </url>
     <url>
-        <loc>/flyers/ssti.html</loc>
+        <loc>https://securityzines.com/flyers/rxss.html</loc>
     </url>
     <url>
-        <loc>/flyers/template.html</loc>
+        <loc>https://securityzines.com/flyers/ssti.html</loc>
     </url>
     <url>
-        <loc>/ppts/cybersecurityInIndia.html</loc>
+        <loc>https://securityzines.com/flyers/template.html</loc>
     </url>
     <url>
-        <loc>/ppts/defendersGuideToKubernetes.html</loc>
+        <loc>https://securityzines.com/ppts/cybersecurityInIndia.html</loc>
     </url>
     <url>
-        <loc>/zines/csrf.html</loc>
+        <loc>https://securityzines.com/ppts/defendersGuideToKubernetes.html</loc>
     </url>
     <url>
-        <loc>/zines/docker.html</loc>
+        <loc>https://securityzines.com/zines/csrf.html</loc>
     </url>
     <url>
-        <loc>/zines/hashing.html</loc>
+        <loc>https://securityzines.com/zines/docker.html</loc>
     </url>
     <url>
-        <loc>/zines/http.html</loc>
+        <loc>https://securityzines.com/zines/hashing.html</loc>
     </url>
     <url>
-        <loc>/zines/saml.html</loc>
+        <loc>https://securityzines.com/zines/http.html</loc>
     </url>
     <url>
-        <loc>/zines/sop.html</loc>
+        <loc>https://securityzines.com/zines/saml.html</loc>
     </url>
     <url>
-        <loc>/zines/sqli.html</loc>
+        <loc>https://securityzines.com/zines/sop.html</loc>
     </url>
     <url>
-        <loc>/zines/template.html</loc>
+        <loc>https://securityzines.com/zines/sqli.html</loc>
     </url>
     <url>
-        <loc>/zines/webauth.html</loc>
+        <loc>https://securityzines.com/zines/template.html</loc>
     </url>
     <url>
-        <loc>/zines/xss.html</loc>
+        <loc>https://securityzines.com/zines/webauth.html</loc>
     </url>
     <url>
-        <loc>/zines/zines-bundle.html</loc>
+        <loc>https://securityzines.com/zines/xss.html</loc>
     </url>
     <url>
-        <loc>/index.html</loc>
+        <loc>https://securityzines.com/zines/zines-bundle.html</loc>
+    </url>
+    <url>
+        <loc>https://securityzines.com/index.html</loc>
     </url>
 </urlset>
